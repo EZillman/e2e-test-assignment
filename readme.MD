@@ -1,3 +1,7 @@
+# E2E tests
+
+This is my last testing assignment, I will do end to end tests.
+
 # Inlämningsuppgift E2E-tester
 
 Detta projekt skall användas som mall för inlämningen av e2e-tester. Klona ner repot, ta bort .git-mappen och skapa ert eget repo av projektet. Därefter kan ni börja skriva era tester.
