@@ -21,7 +21,7 @@ describe('submit button', () => {
 });
 
 describe('searching for movies', () => {
-  it('should find movies', () => {
+  it('should find movies from omdbapi', () => {
     cy.get('input#searchText').type('chocolate').should('have.value', 'chocolate');
 
     //cy.get('button#search').click();
@@ -36,6 +36,13 @@ describe('trying to submit empty input', () => {
     cy.get('button#search').click();
 
     cy.get('p').contains('Inga sökresultat att visa').should('exist');
+  });
+
+});
+
+describe('searching for mocked movies', () => {
+  it('', () => {
+
   });
 
 });
