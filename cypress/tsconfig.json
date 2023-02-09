@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": ["ESNEXT", "DOM"],
+        "types": ["cypress", "node"]
+    },
+    "include": ["**/*.ts"]
+}
