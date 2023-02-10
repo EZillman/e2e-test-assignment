@@ -21,13 +21,13 @@ describe('submit button', () => {
 });
 
 describe('searching for movies from api', () => {
-  it('should find movies from omdbapi', () => {
+  it('should search for movies from omdbapi', () => {
     cy.get('input#searchText').type('chocolate').should('have.value', 'chocolate');
 
     cy.get('button#search').click();
   });
 
-  it('should create correct elements for movie', () => {
+  it('should find movies and create correct elements', () => {
     cy.get('input#searchText').type('chocolate').should('have.value', 'chocolate');
 
     cy.get('button#search').click();
