@@ -1,6 +1,6 @@
 # E2E tests
 
-This is my last testing assignment, I will do end to end tests.
+This is the last testing assignment in the course "Testning". In this assignment I have created e2e tests
 
 # Inlämningsuppgift E2E-tester
 
