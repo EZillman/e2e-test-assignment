@@ -20,11 +20,23 @@ describe('submit button', () => {
 
 });
 
-describe('searching for movies', () => {
+describe('searching for movies from api', () => {
   it('should find movies from omdbapi', () => {
     cy.get('input#searchText').type('chocolate').should('have.value', 'chocolate');
 
-    //cy.get('button#search').click();
+    cy.get('button#search').click();
+  });
+
+  it('should create correct elements for movie', () => {
+    cy.get('input#searchText').type('chocolate').should('have.value', 'chocolate');
+
+    cy.get('button#search').click();
+
+    cy.get('div.movie').should('exist');
+    cy.get('div.movie > h3').should('exist');
+    cy.get('div.movie > h3:first').contains('Chocolate').should('exist');
+    cy.get('div.movie > img').should('exist');
+
   });
 
 });
@@ -40,9 +52,3 @@ describe('trying to submit empty input', () => {
 
 });
 
-describe('searching for mocked movies', () => {
-  it('', () => {
-
-  });
-
-});
